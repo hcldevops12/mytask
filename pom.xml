@@ -4,7 +4,7 @@
   <groupId>facebook</groupId>
   <artifactId>delhi</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <name>delhi Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -15,9 +15,26 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>delhi</finalName>
-  </build>
+  
+<build>
+           <finalName>simplemavenproject</finalName>
+              <plugins>
+                   <plugin>
+                       <artifactId>maven-deploy-plugin</artifactId>
+                       <version>2.8.2</version>
+                       <executions>
+                           <execution>
+                               <id>default-deploy</id>
+                               <configuration>
+                                   <skip>true</skip>
+                               </configuration>
+                           </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+       </build>
+
+
 <repositories>
 <repository>
 <id>group</id>
