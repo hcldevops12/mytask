@@ -27,8 +27,8 @@
 	     <configuration>
 	         <skip>true</skip>
 	      </configuration>
-    <execution>
-	   <executions>
+    </execution>
+	   </executions>
 	   </plugin>
 	      </plugins>
 
